@@ -1,0 +1,175 @@
+body{
+    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.table_output{
+    float: left;
+}
+
+.table_output td{
+    height: 100px;
+    border-style: none none solid none;
+    border-color: lightblue;
+}
+
+.table_output td.table_information{
+    padding: 10px 10px;
+    position: relative;
+    text-align: left;
+    
+    background-color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.table_output td.table_information p{
+    font-size: 15px;
+    padding: 0px 10px 0px 0px;
+}
+
+.table_output td.table_img a img{
+    padding: 10px 20px;
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.table_output td.table_img img:hover{
+    transform: scale(1.1);
+}
+
+.Travel_Location{
+    padding: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Travel_Location input{
+    width: 100%;
+}
+
+
+.Travel_Location h2 p input{
+    padding: 10px 10px;
+}
+
+.Search {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 10px;
+    margin: 40px 15px 10px 20px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid LightGray;
+    width: 250px;
+}
+
+.Travel_List{
+    float: left;
+    top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    display: fixed;
+    position: relative;
+}
+
+.Travel_List ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.Travel_List ul li{
+    background-color: #fff;
+    padding: 30px 30px;
+    font-size: 30px;
+    text-align: center;
+    border-style: none none solid none;
+}
+
+.Travel_List ul li a{
+    color: black;
+    text-decoration: none;
+    transform: .3s;
+}
+
+.Travel_List ul li a:hover{
+    background-color: lightblue;
+}
+
+.Travel_Table{
+    float: left;
+    top: 100px;
+}
+
+.Travel_List .Travel_Table{
+    width: 100%;
+}
+
+section#Travel_HL{
+    background-image: url("../img/travel/HL.jpg");
+}
+
+section#Travel_GX{
+    background-image: url("../img/travel/GX.jpg");
+}
+
+section#Travel_TD{
+    background-image: url("../img/travel/TD.jpg");
+}
+
+section#Travel_NT{
+    background-image: url("../img/travel/NT.jpg");
+}
+
+section.Travel_background {
+    height: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  section.Travel_background .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: #dddddd;
+  }
+  
+  section.Travel_background .intro-text .intro-lead-in {
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+  
+  section.Travel_background .intro-text .intro-heading {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+  
+  @media (min-width: 768px) {
+    section.Travel_background .intro-text {
+      padding-top: 300px;
+      padding-bottom: 200px;
+    }
+    section.Travel_background .intro-text .intro-lead-in {
+      font-size: 40px;
+      font-style: italic;
+      line-height: 40px;
+      margin-bottom: 25px;
+      font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    }
+    section.Travel_background .intro-text .intro-heading {
+      font-size: 75px;
+      font-weight: 700;
+      line-height: 75px;
+      margin-bottom: 50px;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    }
+  }
+
+#On{
+    background-color: #fed503;
+    color: white;
+}
