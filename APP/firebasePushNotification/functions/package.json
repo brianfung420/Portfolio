@@ -13,11 +13,6 @@
     "node": "8"
   },
   "dependencies": {
-	"acorn": ">=6.4.1"
-	"minimist": ">=0.2.1
-	"https-proxy-agent": ">=2.2.3"
-	"eslint-utils": ">=1.4.1"
-	"lodash": ">=4.17.12"
     "firebase-admin": "^8.0.0",
     "firebase-functions": "^3.0.0"
   },
