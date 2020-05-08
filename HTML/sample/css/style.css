@@ -1,0 +1,37 @@
+.table_output{
+    top: 300px;
+    border: 10px;
+}
+
+.table_output td{
+    width:auto;
+    height: 200px;
+}
+
+.table_output td h2 h3 p{
+    top:0;
+    padding: 0px 10px;
+
+}
+
+.table_output td img{
+    background-color: lightblue;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.table_output img:hover{
+    transform: scale(1.1);
+}
+
+.Search_Location{
+    float: left;
+    width: 35% ;
+    margin: 10px 10px;
+}
+
+
+
+

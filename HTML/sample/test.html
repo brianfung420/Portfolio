@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+        #map{
+                height:300px;
+                width:100%;
+            }
+            </style>
+</head>
+
+<body>
+    <div>
+        <h2>User Registration</h2>
+    </div>
+    <form>
+        <p>User Name:</p>
+        <input type="text" class="form-control">
+        <p>Email:</p>
+        <input type="email" class="form-control">
+        <p>Password(Minimum length is 8 characters):</p>
+        <input type="password" class="form-control" id="password">
+        <p>Password Confirmation:</p>
+        <input type="password" class="form-control" id="passwordConfirmation">
+        <p>University:</p>
+        <select class="custom-select" id="U">
+            <option id="NTU" value="NTU">National Taiwan University</option>
+            <option id="FCU" value="FCU">Feng Chia Uneversity</option>
+            <option id="NCKU" value="NCKU">National Cheng Kung University</option>
+        </select>
+        <div id="map"></div>
+        <script>
+            function FirstMap() {
+                var uluru = { lat: 25.018519, lng: 121.539748 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 15,
+                        center: uluru
+                    });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+            function initMap(x, y) {
+                var uluru = { lat: x, lng: y };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+
+            $("#U").change(function () {
+                var selected = $(this).val();
+                if (selected == 'NTU') {
+                    initMap(25.018519, 121.539748);
+                }
+                else if (selected == 'FCU') {
+                    initMap(24.179002, 120.648397);
+                }
+                else if (selected == 'NCKU') {
+                    initMap(22.999126, 120.219480);
+                }
+            });
+            function CH() {
+                var PW = $("#password").val();
+                var PWC = $("#passwordConfirmation").val();
+                if (PW == PWC && PW.length >= 8) {
+                    alert("Register Successfully");
+                }
+                else if (PW.length < 8) {
+                    alert("The minimum length of the password is 8");
+                }
+                else if (PW != PWC) {
+                    alert("Please confirm your password");
+                }
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVzeYipfPzJuiHOUEu1CNUy9cYuaLBHaY&callback=initMap">
+        </script>
+        <button onclick="CH()" class="btn btn-primary">Register</button>
+    </form>
+</body>
+
+</html>

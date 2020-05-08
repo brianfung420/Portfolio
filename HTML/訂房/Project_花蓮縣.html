@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <!-- 當地住宿 -->
+    <title>住宿———花蓮縣</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/Project.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><b>軟硬工程師</b></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../首頁/index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../布農族的文化與美食/food.html">部落介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../訂房/Project_南投縣.html" >訂房資訊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../活動資訊/activity.html">活動資訊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../交通查詢/transport.html">交通資訊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../旅遊資訊/Project_HL.html">旅遊資訊</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead" style="height:730px">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading text-uppercase">當地住宿</div>
+                <h1 align="center" style="color:white;"><b>花蓮縣</b></h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="col-lg-12 col-xs-12 Travel_Location">
+        <div class='a'>
+            <input class="form-control" id="myInput" type="text" style="width:200px" maxlength="10" placeholder="想住哪，就搜哪！">
+        </div>
+
+        <td>
+            <div class='b'>
+                <select class="form-control" style="width:130px" onchange="location.href=(this.value)">
+                    <option value="網址連結">選擇地區</option>
+                    <option value="Project_臺東縣.html">臺東縣</option>
+                    <option value="Project_高雄市.html">高雄市</option>
+                    <option value="Project_南投縣.html">南投縣</option>
+                </select>
+            </div>
+        </td>
+
+        <td>
+            <div class='c'>
+                <label for="cust" style="color:white;">顧客評價</label>
+                <select class="form-control" style="width: 70px">
+                    <option value="0">10</option>
+                    <option value="1"> 9</option>
+                    <option value="2"> 8</option>
+                    <option value="3"> 7</option>
+                    <option value="4"> 6</option>
+                    <option value="5"> 5</option>
+                    <option value="6"> 4</option>
+                    <option value="7"> 3</option>
+                    <option value="8"> 2</option>
+                    <option value="9"> 1</option>
+                    <option value="10">0</option>
+                    <option value="11">暫未獲評</option>
+                </select>
+            </div>
+        </td>
+
+        <td>
+            <div class='d'>
+                <label for="day" style="color:white;">入住日期</label>
+                <input type="date" class="form-control" style="width:160px">
+            </div>
+        </td>
+
+        <td>
+            <div class='e'>
+                <label for="day" style="color:white;">退房日期</label>
+                <input type="date" class="form-control" style="width:160px">
+            </div>
+        </td>
+
+        <td>
+            <div class='f'>
+                <label for="room" style="color:white;">客房</label>
+                <select class="form-control" style="width: 70px">
+                    <option value="17"> 1</option>
+                    <option value="18"> 2</option>
+                    <option value="19"> 3</option>
+                    <option value="20"> 4</option>
+                    <option value="21"> 5</option>
+                    <option value="22"> 6</option>
+                    <option value="23"> 7</option>
+                    <option value="24"> 8</option>
+                    <option value="25"> 9</option>
+                </select>
+            </div>
+        </td>
+
+        <td>
+            <div class='g'>
+                <label for="adult" style="color:white;" id="Adult">成人數量</label>
+                <select class="form-control" style="width: 70px">
+                    <option value="26"> 0</option>
+                    <option value="27"> 1</option>
+                    <option value="28"> 2</option>
+                    <option value="29"> 3</option>
+                    <option value="30"> 4</option>
+                    <option value="31"> 5</option>
+                    <option value="32"> 6</option>
+                    <option value="33"> 7</option>
+                    <option value="34"> 8</option>
+                    <option value="35"> 9</option>
+                    <option value="36"> 10</option>
+                    <option value="37"> 11</option>
+                    <option value="38"> 12</option>
+                    <option value="39"> 13</option>
+                    <option value="40"> 14</option>
+                    <option value="41"> 15</option>
+                    <option value="42"> 16</option>
+                    <option value="43"> 17</option>
+                    <option value="44"> 18</option>
+                    <option value="45"> 19</option>
+                    <option value="46"> 20</option>
+                    <option value="47"> 21</option>
+                    <option value="48"> 22</option>
+                    <option value="49"> 23</option>
+                    <option value="50"> 24</option>
+                    <option value="51"> 25</option>
+                    <option value="52"> 26</option>
+                    <option value="53"> 27</option>
+                    <option value="54"> 28</option>
+                    <option value="55"> 29</option>
+                    <option value="56"> 30</option>
+                    <option value="57"> 31</option>
+                    <option value="58"> 32</option>
+                    <option value="59"> 33</option>
+                    <option value="60"> 34</option>
+                    <option value="61"> 35</option>
+                    <option value="62"> 36</option>
+                </select>
+            </div>
+        </td>
+
+        <td>
+            <div class='i'>
+                <label for="child" style="color:white;" id="Child">孩童數量</label>
+                <select class="form-control" style="width: 70px">
+                    <option value="63"> 0</option>
+                    <option value="64"> 1</option>
+                    <option value="65"> 2</option>
+                    <option value="66"> 3</option>
+                    <option value="67"> 4</option>
+                    <option value="68"> 5</option>
+                    <option value="69"> 6</option>
+                    <option value="70"> 7</option>
+                    <option value="71"> 8</option>
+                    <option value="72"> 9</option>
+                </select>
+            </div>
+        </td>
+
+        <td>
+            <div class='h'>
+                <label for="pay" style="color:white;">價格</label>
+                <select class="form-control" style="width:140px" id="sel1">
+                    <option value="63">0 ~ 500</option>
+                    <option value="64">500 ~ 1000</option>
+                    <option value="65">1000 ~ 2000</option>
+                    <option value="66">2000 ~ 3000</option>
+                    <option value="67">3000 ~ 5000</option>
+                    <option value="68">5000 ~ 7000</option>
+                    <option value="69">7000 ~ 9000</option>
+                    <option value="70">9000 ~ 15000</option>
+                    <option value="71">15000以上</option>
+                </select>
+            </div>
+        </td>
+    </div>
+
+    <div>
+        <div class="col-sm-10 col-md-10 col-lg-12">
+            <table class="table_output">
+                <tbody id="myTable">
+                    <tr>
+                        <td>
+                            <img src="img/room/玉山緣.jpg" alt="玉山緣" width="450" height="350">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">玉山緣</h2>
+                            <p>位置：花蓮縣卓溪鄉清水100之2號 </p>
+                            <p>評價：8.0</p>
+                            <p>房型：山景雙人房 (2人/間)</p>
+                            <p>玉山緣位於卓溪，提供免費 WiFi。住客可於館內享有山景以及花園景緻。
+                                館內每日供應自助式或亞洲風味早餐。
+                                民宿設有陽光露台和共用休息室，客人亦可於周邊地區騎乘自行車和健行。
+                                最近的機場是台東機場，距離 83 公里。
+                                此住宿也被評選為卓溪鄉最佳地理位置住宿之一！顧客滿意度比同區域其他住宿高。</p>
+                            <input type="button" value="訂房" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/yu-shan-yuan.zh-tw.html?aid=304142;label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAID;sid=3c2fce841ef3c285b3d6b1f6efcd14ec;dest_id=900058533;dest_type=city;dist=0;group_adults=2;hapos=1;hpos=1;nflt=ht_id%3D222%3B;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1545667381;srpvid=d91a70da762f0065;type=total;ucfs=1&#hotelTmpl'">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/room/族語咖啡.jpg" alt="族語咖啡" width="450" height="300">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">族語咖啡民宿</h2>
+                            <p>位置：花蓮縣玉里鎮卓溪村中正6-1號</p>
+                            <p>評價：8.9</p>
+                            <p>房型：山景雙人房 (2人/間)、經濟三人房 (3人/間)、經濟四人房 (4人/間)</p>
+                            <p>族語咖啡民宿位於玉里，設有台灣原住民風格客房和燒烤設備，並提供全館免費 WiFi。
+                                族語咖啡民宿距離玉里火車站有 10 分鐘車程，距離玉里濕地有 15 分鐘車程。
+                                每間客房都設有空調和電視，部分客房享有山景。共用衛浴內配有淋浴設備、免費盥洗用品和吹風機。
+                                民宿提供自行車出租服務。此外，該地區是健行登山的熱門地點。
+                                客人入住期間均享有每日早餐。</p>
+                            <input type="button" value="訂房" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/zu-yu-ka-pei-min-su-yuli.zh-tw.html?label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAID;sid=3c2fce841ef3c285b3d6b1f6efcd14ec;dest_id=900058533;dest_type=city;dist=0;group_adults=2;hapos=3;hpos=3;nflt=ht_id%3D222%3B;room1=A%2CA;sb_price_type=total;spdest=ci%2F900058533;sr_order=popularity;srepoch=1545668082;srpvid=80de72384d56026d;type=total;ucfs=1&#hotelTmpl'">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/room/迴家.jpg" alt="迴家" width="450" height="250">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">迴家</h2>
+                            <p>位置：花蓮縣玉里鎮大同路192路</p>
+                            <p>評價：8.6</p>
+                            <p>房型：雙人房 (2人/間)、標準雙人房 (2人/間)、四人房 (4人/間)、標準四人房 (4人/間)</p>
+                            <p>迴家位於花蓮玉里，提供免費 WiFi。
+                                所有客房均設有空調和平面電視。私人衛浴設備齊全，配有淋浴設施和吹風機。
+                                民宿提供自行車租賃服務。
+                                最近的機場是台東機場，距離 61 公里。</p>
+                            <input type="button" value="訂房" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/return-home-b-amp-b.zh-tw.html?label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAID;sid=3c2fce841ef3c285b3d6b1f6efcd14ec;dest_id=900058533;dest_type=city;dist=0;group_adults=2;hapos=2;hpos=2;nflt=ht_id%3D222%3B;room1=A%2CA;sb_price_type=total;spdest=ci%2F900058533;sr_order=popularity;srepoch=1545668082;srpvid=80de72384d56026d;type=total;ucfs=1&#hotelTmpl'">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/room/御禮虹喬.jpg" alt="御禮虹喬" width="450" height="250">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">御禮虹喬民宿</h2>
+                            <p>位置：花蓮縣玉里鎮中城里仁愛路一段18巷2號</p>
+                            <p>評價：8.8</p>
+                            <p>房型：小型雙人/雙床房 (2人/間)、大型雙人房 (2人/間)、經典四人房 (4人/間)</p>
+                            <p>御禮虹喬民宿位於玉里鎮，提供免費 WiFi 、空調和花園。
+                                民宿設有平面電視，私人衛浴內附免費盥洗用品、吹風機和淋浴設施。部分客房配有露台／陽台。
+                                住客可於公共休息區放鬆休憩。
+                                最近的機場為綠島機場，距離 84 公里。</p>
+                            <input type="button" value="訂房" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/yu-li-hong-qiao-min-su.zh-tw.html?label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAID;sid=3c2fce841ef3c285b3d6b1f6efcd14ec;dest_id=900058533;dest_type=city;dist=0;group_adults=2;hapos=8;hpos=8;nflt=ht_id%3D222%3B;room1=A%2CA;sb_price_type=total;spdest=ci%2F900058533;sr_order=popularity;srepoch=1545668082;srpvid=80de72384d56026d;type=total;ucfs=1&#hotelTmpl'">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/room/邊界。花東.jpg" alt="邊界。花東" width="450" height="250">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">邊界。花東</h2>
+                            <p>位置：花蓮縣富里鄉車站街一號</p>
+                            <p>評價：9.4</p>
+                            <p>房型：雙人房 (2人/間)、山景雙人房 (2人/間)、四人房 (4人/間)</p>
+                            <p>邊界．花東位於花蓮縣富里鄉，提供免費 WiFi。
+                                所有客房均配備空調和平面電視。私人衛浴設備齊全，設有淋浴設施，並備有吹風機。
+                                民宿每日供應中式早餐。附設餐廳供應亞洲美食。
+                                館內設有露台。
+                                最近的機場是台東機場，距離約 62 公里。</p>
+                            <input type="button" value="訂房" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/bian-jie-hua-dong.zh-tw.html'">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/room/離家出走.jpg" alt="離家出走" width="450" height="250">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">離家出走民宿</h2>
+                            <p>位置：花蓮縣玉里鎮長良181之3號</p>
+                            <p>評價：9.4</p>
+                            <p>房型：雙人房 (2人/間)、生態間 (2人/間)、加大雙人床房 (2人/間)、山景特大雙人床房 (2人/間)、家庭房 (4人/間)</p>
+                            <p>離家出走民宿位於長良里，距離玉里鎮約 7 公里，提供陽光露台、全館免費 WiFi 和免費私人停車場。
+                                客房均設有空調、平面有線電視、陽台、私人衛浴，提供室內拖鞋、免費盥洗用品和吹風機。
+                                此地區為健行的熱門地點。</p>
+                            <input type="button" value="訂房" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/simple-life.zh-tw.html?label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAID;sid=3c2fce841ef3c285b3d6b1f6efcd14ec;dest_id=900058533;dest_type=city;dist=0;group_adults=2;hapos=4;hpos=4;nflt=ht_id%3D222%3B;room1=A%2CA;sb_price_type=total;spdest=ci%2F900058533;sr_order=popularity;srepoch=1545668082;srpvid=80de72384d56026d;type=total;ucfs=1&#hotelTmpl'">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <!-- 當地住宿 -->
+    <title>住宿———南投縣</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/Project.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><b>軟硬工程師</b></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../首頁/index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../布農族的文化與美食/food.html">部落介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../訂房/Project_南投縣.html" >訂房資訊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../活動資訊/activity.html">活動資訊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../交通查詢/transport.html">交通資訊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../旅遊資訊/Project_HL.html">旅遊資訊</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead" style="height:730px">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading text-uppercase">當地住宿</div>
+                <h1 align="center" style="color:white;"><b>南投縣</b></h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="col-lg-12 col-xs-12 Travel_Location">
+        <div class='a'>
+            <input class="form-control" id="myInput" type="text" style="width:200px" maxlength="10" placeholder="想住哪，就搜哪！">
+        </div>
+
+        <td>
+            <div class='b'>
+                <select class="form-control" style="width:130px" onchange="location.href=(this.value)">
+                    <option value="網址連結">選擇地區</option>
+                    <option value="Project_花蓮縣.html">花蓮縣</option>
+                    <option value="Project_高雄市.html">高雄市</option>
+                    <option value="Project_臺東縣.html">臺東縣</option>
+                </select>
+            </div>
+        </td>
+
+        <td>
+            <div class='c'>
+                <label for="cust" style="color:white;">顧客評價</label>
+                <select class="form-control" style="width:70px">
+                    <option value="0">10</option>
+                    <option value="1"> 9</option>
+                    <option value="2"> 8</option>
+                    <option value="3"> 7</option>
+                    <option value="4"> 6</option>
+                    <option value="5"> 5</option>
+                    <option value="6"> 4</option>
+                    <option value="7"> 3</option>
+                    <option value="8"> 2</option>
+                    <option value="9"> 1</option>
+                    <option value="10">0</option>
+                    <option value="11">暫未獲評</option>
+                </select>
+            </div>
+        </td>
+
+        <td>
+            <div class='d'>
+                <label for="day" style="color:white;">入住日期</label>
+                <input type="date" class="form-control" style="width:160px">
+            </div>
+        </td>
+
+        <td>
+            <div class='e'>
+                <label for="day" style="color:white;">退房日期</label>
+                <input type="date" class="form-control" style="width:160px">
+            </div>
+        </td>
+
+        <td>
+            <div class='f'>
+                <label for="room" style="color:white;">客房</label>
+                <select class="form-control" style="width: 70px">
+                    <option value="17"> 1</option>
+                    <option value="18"> 2</option>
+                    <option value="19"> 3</option>
+                    <option value="20"> 4</option>
+                    <option value="21"> 5</option>
+                    <option value="22"> 6</option>
+                    <option value="23"> 7</option>
+                    <option value="24"> 8</option>
+                    <option value="25"> 9</option>
+                </select>
+            </div>
+        </td>
+
+        <td>
+            <div class='g'>
+                <label for="adult" style="color:white;">成人數量</label>
+                <select class="form-control" style="width: 70px">
+                    <option value="26"> 0</option>
+                    <option value="27"> 1</option>
+                    <option value="28"> 2</option>
+                    <option value="29"> 3</option>
+                    <option value="30"> 4</option>
+                    <option value="31"> 5</option>
+                    <option value="32"> 6</option>
+                    <option value="33"> 7</option>
+                    <option value="34"> 8</option>
+                    <option value="35"> 9</option>
+                    <option value="36"> 10</option>
+                    <option value="37"> 11</option>
+                    <option value="38"> 12</option>
+                    <option value="39"> 13</option>
+                    <option value="40"> 14</option>
+                    <option value="41"> 15</option>
+                    <option value="42"> 16</option>
+                    <option value="43"> 17</option>
+                    <option value="44"> 18</option>
+                    <option value="45"> 19</option>
+                    <option value="46"> 20</option>
+                    <option value="47"> 21</option>
+                    <option value="48"> 22</option>
+                    <option value="49"> 23</option>
+                    <option value="50"> 24</option>
+                    <option value="51"> 25</option>
+                    <option value="52"> 26</option>
+                    <option value="53"> 27</option>
+                    <option value="54"> 28</option>
+                    <option value="55"> 29</option>
+                    <option value="56"> 30</option>
+                    <option value="57"> 31</option>
+                    <option value="58"> 32</option>
+                    <option value="59"> 33</option>
+                    <option value="60"> 34</option>
+                    <option value="61"> 35</option>
+                    <option value="62"> 36</option>
+                </select>
+            </div>
+        </td>
+
+        <td>
+            <div class='h'>
+                <label for="child" style="color:white;">孩童數量</label>
+                <select class="form-control" style="width: 70px">
+                    <option value="63"> 0</option>
+                    <option value="64"> 1</option>
+                    <option value="65"> 2</option>
+                    <option value="66"> 3</option>
+                    <option value="67"> 4</option>
+                    <option value="68"> 5</option>
+                    <option value="69"> 6</option>
+                    <option value="70"> 7</option>
+                    <option value="71"> 8</option>
+                    <option value="72"> 9</option>
+                </select>
+            </div>
+        </td>
+
+        <td>
+            <div class='i'>
+                <label for="pay" style="color:white;">價格</label>
+                <select class="form-control" style="width:140px" id="sel1">
+                    <option value="63">0 ~ 500</option>
+                    <option value="64">500 ~ 1000</option>
+                    <option value="65">1000 ~ 2000</option>
+                    <option value="66">2000 ~ 3000</option>
+                    <option value="67">3000 ~ 5000</option>
+                    <option value="68">5000 ~ 7000</option>
+                    <option value="69">7000 ~ 9000</option>
+                    <option value="70">9000 ~ 15000</option>
+                    <option value="71">15000以上</option>
+                </select>
+            </div>
+        </td>
+    </div>
+
+    <div>
+        <div class="col-sm-10 col-md-10 col-lg-12">
+            <table class="table_output">
+                <tbody id="myTable">
+                    <tr>
+                        <td>
+                            <img src="img/room/達芭凱花園民宿.jpg" alt="達芭凱花園民宿" width="450" height="300" padding="10px 20px">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">達芭凱花園民宿</h2>
+                            <p>位置：南投縣信義鄉望和巷15-8號</p>
+                            <p>評價：8.8</p>
+                            <p>房型：雙人房 (2人/間)、四人房 (4人/間)</p>
+                            <p>達芭凱花園民宿位於南投縣信義鄉布農族望鄉部落內，坐擁玉山和星空美景。
+                                達芭凱花園民宿距離阿里山 23 公里，距離嘉義市 46 公里，距離杉林溪森林生態渡假園區 79 公里。最近的機場是台中清泉崗機場，距離 78 公里。民宿距離知名的東埔溫泉
+                                10
+                                公里。
+                                每間客房均擁有簡單而乾淨的裝飾，並設有陽台和風扇。客人可在陽台上一邊放鬆身心，一邊欣賞台灣最高峰玉山的美景。浴室內配有淋浴設施、免費盥洗用品和吹風機。
+                                入住達芭凱花園民宿的客人可拜訪望鄉部落、獵人古道和千歲吊橋，度過悠閒時光。</p>
+                            <input type="button" value="訂房" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/da-ba-kai-hua-yuan-min-su.zh-tw.html?aid=304142;label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAID;sid=3c2fce841ef3c285b3d6b1f6efcd14ec;dest_id=-2639727;dest_type=city;dist=0;group_adults=2;hapos=1;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1545673089;srpvid=f87d7c005b0f001f;type=total;ucfs=1&#hotelTmpl'">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/room/溪頭盛軒森林會館.jpg" alt="溪頭盛軒森林會館" width="450" height="300" padding="10px 20px">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">溪頭妖怪村前-溪頭盛軒森林會館</h2>
+                            <p>位置：南投縣鹿谷興產路22-12號</p>
+                            <p>評價：8.3</p>
+                            <p>房型：雙人房 (2人/間)、豪華雙人房 (2人/間)、雙床房 (3人/間)、山景雙床房 (4人/間)四人房 (4人/間)、山景四人房 (4人/間)<br />、標準家庭房
+                                (6人/間)、山景家庭房 (6人/間)</p>
+                            <p>溪頭妖怪村前-溪頭盛軒森林會館位於溪頭森林遊樂區新大門對面，設有陽光露台，可一覽美麗山景。會館內設有免費私人停車場。
+                                部分客房設有帶熱水浴缸的獨立衛浴間，其他客房則提供拖鞋和免費盥洗用品。部分客房設有露台或陽台。館內各處均提供免費無線網路服務。房內設有電視。
+                                住宿提供免費接駁服務。
+                                住宿距離溪頭自然教育園區 200 公尺，距離忘憂森林則是 15 公里。台中清泉岡機場距離飯店 67 公里。</p>
+                            <input type="button" value="訂房" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/xi-tou-yao-guai-cun-qian-xi-tou-sheng-xuan-sen-lin-hui-guan.zh-tw.html?aid=304142;label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAID;sid=3c2fce841ef3c285b3d6b1f6efcd14ec;dest_id=-2639727;dest_type=city;dist=0;group_adults=2;hapos=3;hpos=3;nflt=ht_id%3D222%3B;room1=A%2CA;sb_price_type=total;spdest=ci%2F-2639727;sr_order=popularity;srepoch=1545673492;srpvid=af0c7cca74580086;type=total;ucfs=1&#map_closed'">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/room/南投溪頭尚緹會館.jpg" alt="南投溪頭尚緹會館" width="450" height="250" padding="10px 20px">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">南投溪頭尚緹會館</h2>
+                            <p>位置：南投縣鹿谷興產路10之2號</p>
+                            <p>評價：8.5</p>
+                            <p>房型：標準雙人房 (2人/間)、基本四人房 － 2名成人＋2名兒童 (4人/間)、經濟四人房 (4人/間)、家庭房 － 4名成人 (4人/間)</p>
+                            <p>溪頭尚緹會館民宿位於鹿谷，館內提供免費 WiFi。
+                                客房均配有平面電視和水壺，私人衛浴內附淋浴設施。為了客人旅途的舒適，也備有拖鞋、免費盥洗用品和吹風機。
+                                館內提供票券服務。
+                                溪頭尚緹會館民宿距離溪頭自然教育園區 700 公尺，距離忘憂森林 18 公里。最近的機場是台中清泉崗機場，距離 67 公里。 </p>
+                            <input type="button" value="訂房" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/shang-ti-min-su.zh-tw.html?aid=304142;label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAID;sid=3c2fce841ef3c285b3d6b1f6efcd14ec;dest_id=-2639727;dest_type=city;dist=0;group_adults=2;hapos=4;hpos=4;nflt=ht_id%3D222%3B;room1=A%2CA;sb_price_type=total;spdest=ci%2F-2639727;sr_order=popularity;srepoch=1545673492;srpvid=af0c7cca74580086;type=total;ucfs=1&#hotelTmpl'">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/room/溪頭曼陀鄉民宿.jpg" alt="溪頭曼陀鄉民宿" width="450" height="250" padding="10px 20px">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">溪頭曼陀鄉民宿</h2>
+                            <p>位置：南投縣鹿谷興產路1-15號</p>
+                            <p>評價：8.4</p>
+                            <p>房型：小型雙人房 (2人/間)、雙人房 (2人/間)、豪華雙人房 (2人/間)、標準三人房 (3人/間)、四人房 (4人/間)<br />、豪華四人房 (4人/間)、山景家庭房
+                                (5人/間)、家庭房 (6人/間)、套房 (6人/間)</p>
+                            <p>溪頭曼陀鄉民宿位於鹿谷鄉，距離溪頭自然教育園區 1 公里，距離忘憂森林 14 公里，館內提供免費 WiFi。
+                                民宿距離杉林溪森林生態渡假園區 17 公里。最近的機場是台中清泉崗機場，距離 91 公里。 </p>
+                            <input type="button" value="訂房" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/man-tuo-xiang-min-su.zh-tw.html?aid=304142;label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAID;sid=3c2fce841ef3c285b3d6b1f6efcd14ec;dest_id=-2639727;dest_type=city;dist=0;group_adults=2;hapos=5;hpos=5;nflt=ht_id%3D222%3B;room1=A%2CA;sb_price_type=total;spdest=ci%2F-2639727;sr_order=popularity;srepoch=1545673492;srpvid=af0c7cca74580086;type=total;ucfs=1&#hotelTmpl'">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/room/新景宏渡假村.jpg" alt="新景宏渡假村" width="450" height="300" padding="10px 20px">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">新景宏渡假村</h2>
+                            <p>位置：南投縣鹿谷興產路11之2號</p>
+                            <p>評價：8.6</p>
+                            <p>房型：雙人房 (2人/間)、雙床房 (4人/間)、山景雙人房 (2人/間)、山景雙床房 (4人/間)、山景特大雙人房 (2人/間)<br />、四人房 (4人/間)、山景四人房
+                                (4人/間)</p>
+                            <p>新景宏渡假村位於南投縣的鹿谷鄉，館內設有熱水浴缸及免費 WiFi，且鄰近溪頭自然教育園區。
+                                館內所有客房均設有空調及平面電視，私人衛浴附設熱水浴缸、吹風機及免費盥洗用品。
+                                館內提供單點或美式早餐。
+                                客人還可以在共用休息區好好休息。
+                                新景宏渡假村距離忘憂森林有 2.9 公里，距離衫林溪森林生態渡假園區有 4.2 公里，距離台中清泉崗機場有 67 公里。 </p>
+                            </p>
+                            <input type="button" value="訂房" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/xin-jing-hong-du-jia-cun.zh-tw.html?aid=304142;label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAID;sid=3c2fce841ef3c285b3d6b1f6efcd14ec;dest_id=-2639727;dest_type=city;dist=0;group_adults=2;hapos=6;hpos=6;nflt=ht_id%3D222%3B;room1=A%2CA;sb_price_type=total;spdest=ci%2F-2639727;sr_order=popularity;srepoch=1545673492;srpvid=af0c7cca74580086;type=total;ucfs=1&#hotelTmpl'">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/room/溪頭聖茂民宿.jpg" alt="溪頭聖茂民宿" width="450" height="300" padding="10px 20px">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">溪頭聖茂民宿</h2>
+                            <p>位置：南投縣鹿谷興產路22號</p>
+                            <p>評價：8.5</p>
+                            <p>房型：單人房 (1人/間)、標準雙人房 (2人/間)、經濟雙人房 (2人/間)、山景雙人房 (2人/房)、四人房 (4人/間)<br />、山景四人房 (4人/間)、舒適四人房
+                                (4人/間)、標準四人房 (4人/間)、家庭套房 (6人/間)、山景家庭房 (6人/間)</p>
+                            <p>溪頭聖茂民宿位於南投縣鹿谷鄉，距離溪頭自然教育園區約 700 公尺，距離忘憂森林約 3 公里，提供免費 WiFi。
+                                客房配備平面電視。私人衛浴設有淋浴設施，並備有吹風機和免費盥洗用品。部分客房設有露台及／或陽台。
+                                民宿每日供應中式早餐。
+                                民宿距離杉林溪森林生態渡假園區約 4.3 公里。最近的機場是台中清泉崗機場，距離約 67 公里。 </p>
+                            <input type="button" value="訂房" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/xi-tou-sheng-mao-min-su.zh-tw.html?aid=304142;label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAID;sid=3c2fce841ef3c285b3d6b1f6efcd14ec;dest_id=-2639727;dest_type=city;dist=0;group_adults=2;hapos=7;hpos=7;nflt=ht_id%3D222%3B;room1=A%2CA;sb_price_type=total;spdest=ci%2F-2639727;sr_order=popularity;srepoch=1545673492;srpvid=af0c7cca74580086;type=total;ucfs=1&#hotelTmpl'">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/room/溪頭聖馬洛民宿.jpg" alt="溪頭聖馬洛民宿" width="450" height="300" padding="10px 20px">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">溪頭聖馬洛民宿</h2>
+                            <p>位置：南投縣鹿谷興產路22-38號</p>
+                            <p>評價：8.4</p>
+                            <p>房型：雙人房 (2人/間)、標準雙人房 (2人/間)、經濟雙人房 (2人/間)、四人房 (4人/間)、舒適四人房 (4人/間)<br />、標準家庭房 (6人/間)、豪華家庭房
+                                (6人/間)</p>
+                            <p>聖馬洛民宿位於鹿谷，提供免費無線網路。
+                                每間客房均設私人浴室，配有浴缸、空調、平面電視和冰箱，部分客房設有露台和／或山景陽台。
+                                民宿提供歐陸式或亞洲風味早餐。
+                                聖馬洛民宿距離溪頭自然教育園區 700 公尺，距離忘憂森林 3 公里，距離台中清泉崗機 場67 公里。</p>
+                            <input type="button" value="訂房" align="right" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/xi-tou-sheng-ma-luo-min-su.zh-tw.html?aid=304142;label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAID;sid=3c2fce841ef3c285b3d6b1f6efcd14ec;dest_id=-2639727;dest_type=city;dist=0;group_adults=2;hapos=8;hpos=8;nflt=ht_id%3D222%3B;room1=A%2CA;sb_price_type=total;spdest=ci%2F-2639727;sr_order=popularity;srepoch=1545673492;srpvid=af0c7cca74580086;type=total;ucfs=1&#hotelTmpl'">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/room/聽濤園山莊.jpg" alt="聽濤園山莊" width="450" height="330" padding="10px 20px">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">聽濤園山莊</h2>
+                            <p>位置：南投縣鹿谷和雅村愛鄉路1-12號</p>
+                            <p>評價：8.3</p>
+                            <p>房型：單人房 (1人/間)、舒適雙人房 (2人/間)、豪華床房 (2人/間)、奢華套房 (2人/間)、高級豪華四人間 (4人/間)<br />、高級套房 (4人/間)</p>
+                            <p>聽濤園山莊位於蓊鬱山林內，地點便利，距離南投縣鹿谷鎮的溪頭森林遊樂區 6 分鐘車程。附設免費停車場，全館提供免費 WiFi。
+                                客房鋪有木地板，裝有空調，配備電熱水壺、辦公桌和有線電視。另附設私人衛浴，內有吹風機、淋浴設備和免費盥洗用品。
+                                聽濤園山莊四周環繞綠意盎然的美麗花園，設有觀光旅遊櫃台，可協助客人安排觀光旅遊事宜。也提供行李寄存服務。
+                                山莊附設餐廳，客人可於此享用各種當地美食。
+                                聽濤園山莊距離溪頭公車站和知名的溪頭妖怪村 6 分鐘車程。 開車 1 小時內可抵達美麗的日月潭。</p>
+                            <input type="button" value="訂房" align="right" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/tingtau-villa.zh-tw.html?aid=304142;label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAID;sid=3c2fce841ef3c285b3d6b1f6efcd14ec;dest_id=-2639727;dest_type=city;dist=0;group_adults=2;hapos=9;hpos=9;nflt=ht_id%3D222%3B;room1=A%2CA;sb_price_type=total;spdest=ci%2F-2639727;sr_order=popularity;srepoch=1545673492;srpvid=af0c7cca74580086;type=total;ucfs=1&#hotelTmpl'">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/room/溪頭布拉格民宿.jpg"" alt=" 溪頭布拉格民宿" width="450" height="300" padding="10px 20px">
+                        </td>
+                        <td class="table_information">
+                            <h2 style="margin-top: 0.83em; margin-bottom: 0.83em; font-weight: bold;">溪頭布拉格民宿</h2>
+                            <p>位置：南投縣鹿谷興產路6之12號</p>
+                            <p>評價：8.6</p>
+                            <p>房型：標準雙人房 (2人/間)、豪華三人房 (3人/間)、標準四人房 (4人/間)、經典四人房 (4人/間)、高級四人房 (4人/間)</p>
+                            <p>溪頭布拉格民宿位於鹿谷鄉，距離溪頭自然教育園區約 700 公尺，全館提供免費 WiFi。
+                                客房均設有空調、平面有線電視、熱水壺和私人衛浴，另備有拖鞋和免費盥洗用品，提供客人舒適的住宿體驗。部分客房設有休息區，供客人放鬆休憩。
+                                民宿距離忘憂森林約 18 公里，距離杉林溪森林生態渡假園區約 20 公里，距離台中清泉崗機場約 67 公里。 </p>
+                            <input type="button" value="訂房" align="right" style="width:150px;height:40px;font-size:20px;font-weight:bold;float:right;background-color:#fec503;color:white;"
+                                onclick="location.href='https://www.booking.com/hotel/tw/xi-tou-bu-la-ge-du-jia-cun.zh-tw.html?aid=304142;label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAID;sid=3c2fce841ef3c285b3d6b1f6efcd14ec;dest_id=-2639727;dest_type=city;dist=0;group_adults=2;hapos=11;hpos=11;nflt=ht_id%3D222%3B;room1=A%2CA;sb_price_type=total;spdest=ci%2F-2639727;sr_order=popularity;srepoch=1545673492;srpvid=af0c7cca74580086;type=total;ucfs=1&#hotelTmpl'">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+</body>
+
+</html>

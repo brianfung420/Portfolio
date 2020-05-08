@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <style>
+      body {
+          position: relative;
+      }
+      ul.nav-pills {
+          top: 20px;
+          position: fixed;
+      }
+      div.col-8 div {
+          height: 500px;
+      }
+      </style>
+  
+
+    <title>Agency - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+    <style>
+      #map {
+           height: 300px;
+           width: 100%;
+          }
+  </style>
+
+  </head>
+
+  <body id="page-top" >
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">軟硬工程師</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+               <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="../首頁/index.html">首頁</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="../布農族的文化與美食/food.html">部落介紹</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="../訂房/Project_南投縣.html">訂房資訊</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="../活動資訊/activity.html">活動資訊</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="../交通查詢/transport.html">交通資訊</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="../旅遊資訊/Project_HL.html">旅遊資訊</a>
+                 </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Transportation Information</div>
+          <div class="intro-heading text-uppercase">交通資訊</div>
+          <!--<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>-->
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section id="transformations">
+      <div class="container">
+        
+        <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                  <label for="sel1">地區:</label>
+                  <select class="form-control" id="sel1" width="400" style="width: 400px" >
+                      <option value="" selected disabled hidden>---請選擇地區---</option>
+                      <!--<option value="0">玉山國家公園-花蓮縣卓溪鄉-南安部落/清水部落</option>-->
+                      <option value="1">南安瀑布-花蓮縣卓溪鄉-南安部落/清水部落</option>
+                      <option value="2">玉富自行車道-花蓮縣卓溪鄉秀姑巒溪</option>
+                      <option value="3">山風瀑布-花蓮縣卓溪鄉-南安部落/清水部落</option>
+                      <option value="4">瓦拉米步道-花蓮縣卓溪鄉-南安部落/清水部落</option>
+                      <option value="5">八通關古道-花蓮縣卓溪鄉-南安部落/清水部落</option>
+                      <option value="6">新康山-花蓮縣卓溪鄉-南安部落/清水部落</option>
+                      <option value="7">南安遊客中心-花蓮縣卓溪鄉</option>
+                      <option value="10">樂樂谷野溪溫泉-南投縣信義鄉-東埔部落</option>
+                      <option value="11">彩虹瀑布(情人谷)-南投縣信義鄉-東埔部落</option>
+                      <option value="12">東埔溫泉區-南投縣信義鄉-東埔部落</option>
+                      <option value="13">父不知子斷崖-南投縣信義鄉-東埔部落</option>
+                      <option value="14">彩虹吊橋-南投縣信義鄉-東埔部落</option>
+                      <option value="15">八通關古道-南投縣信義鄉-東埔部落</option>
+                      <option value="16">獵人古道-南投縣信義鄉-東埔部落</option>
+                      <option value="17">千歲吊橋-南投縣信義鄉-東埔部落</option>
+                      <option value="18">萬興關-南投縣信義鄉-東埔部落</option>
+                      <option value="19">曲冰遺蹟-南投縣信義鄉-東埔部落</option>
+                      <option value="20">南橫梅山遊憩區-高雄市桃源區</option>
+                      <option value="21">布農文化展示館-高雄市桃源區梅山山莊內</option>
+                      <option value="22">梅山原生種植物園-高雄市桃源區</option>
+                      <option value="23">梅山溫泉-高雄市桃源區</option>
+                      <option value="24">梅蘭布農藝術村-高雄市桃源區</option>
+                      <option value="25">關山越嶺道-高雄市桃源區</option>
+                      <option value="26">藤枝森林遊樂區-高雄市桃源區</option>
+                      <option value="30">布農族文物館-台東縣海端鄉-初來部落/瀧下部落</option>
+                      <option value="31">天龍吊橋-台東縣海端鄉-霧鹿部落</option>
+                      <option value="32">龍泉瀑布-台東縣海端鄉-初來部落/瀧下部落</option>
+                      <option value="33">霧鹿古砲台-台東縣海端鄉-霧鹿部落</option>
+                      <option value="34">加拿瀑布-台東縣海端鄉-加拿部落/加和部落</option>
+                      <option value="35">關山啞口-台東縣海端鄉</option>
+                      <option value="36">霧鹿峽谷-台東縣海端鄉-霧鹿部落</option>
+                      <option value="37">霧鹿溫泉-台東縣海端鄉-下馬部落</option>
+                      <option value="38">栗松溫泉-台東縣海端鄉-利稻部落</option>
+                      <option value="39">鹿野高台-台東縣延平鄉-布谷拉夫部落</option>
+                      <option value="40">鹿野神社-台東縣鹿野鄉-布谷拉夫部落</option>
+                      <option value="41">鸞山部落森林博物館-台東縣延平鄉-拿卡努部落</option>
+                  </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+               <label for="sel1">大眾運輸時刻表:</label>
+                <div class="btn-group">  
+                    <button class="btn btn-secondary"><a href="http://twtraffic.tra.gov.tw/twrail/TW_Quicksearch.aspx" target="_blank">火車</a></button>
+                    <button class="btn btn-secondary"><a href="https://m.thsrc.com.tw/tw/timetable/searchresult" target="_blank">高鐵</a></button>
+                    <button class="btn btn-secondary"><a href="http://www.hualienbus.com.tw/bus/ticket_info.php" target="_blank">花蓮縣公車</a></button>
+                    <button class="btn btn-secondary"><a href="https://www.taiwanbus.tw/Route.aspx?bus=%E5%8D%97%E6%8A%95%E5%AE%A2%E9%81%8B&Lang=" target="_blank">南投縣公車</a></button>
+                    <button class="btn btn-secondary"><a href="https://ibus.tbkc.gov.tw/bus/" target="_blank">高雄市公車</a></button>
+                    <button class="btn btn-secondary"><a href="https://taitung.biz/" target="_blank">台東縣公車</a></button>
+                </div>
+              </div>
+          </div> 
+            <div id="map" style="margin-bottom: 10px"></div>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class = "list-group">
+                        <button data-toggle = "list" href="#bus" class="list-group-item list-group-action">公車/客運
+                        <button data-toggle = "list" href="#train" class="list-group-item list-group-action">火車
+                        <button data-toggle = "list" href="#car" class="list-group-item list-group-action">自行開車
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="tab-content">
+                        <div class="tab-pane fade" id = "bus">請選擇地區!</div> 
+                        <div class="tab-pane fade" id = "train">請選擇地區!</div>
+                        <div class="tab-pane fade" id = "car">請選擇地區!</div>
+                    </div>     
+                </div>
+            </div>
+      
+            
+    </section>
+    <script>
+        function initMap() {
+          var uluru = {lat: 25.017321, lng: 121.539602};
+          var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: uluru
+            });
+           var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+        function changeMap(x,y)
+        {
+            var uluru = {lat:x, lng:y};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: uluru
+                });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+        $( "#sel1" ).change(function() 
+            {
+             var selction=document.getElementById('sel1').value;
+             //if(selction == 0)
+             //{
+               // changeMap(23.469883 ,120.957797);
+                //document.getElementById("bus").innerHTML= "error";
+                //document.getElementById("train").innerHTML= "error";
+                //document.getElementById("car").innerHTML= "error";
+             //}
+             if(selction == 1)
+             {
+                changeMap(23.311785 ,121.247889);
+                document.getElementById("bus").innerHTML= "南安瀑布-花蓮縣卓溪鄉-南安部落/清水部落-公車:"+"<br/>"+"由富里搭花蓮客運經古風往玉里的班車，於卓樂站下車，再依指標前進即可抵達。 ";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "南安瀑布-花蓮縣卓溪鄉-南安部落/清水部落-自行開車:"+"<br/>"+"北上路線：由花蓮南下或自台東北上走9號省道皆可到玉里,循玉里仁愛路至卓麓,續行經卓溪大橋,卓安橋可抵.自花蓮至此約113.7公里;由台東至此約108.2公里。 ";
+             }
+             else if(selction == 2)
+             {
+                changeMap(23.328696 ,121.311151);
+                document.getElementById("bus").innerHTML= "暫無";
+                document.getElementById("train").innerHTML= "玉富自行車道-花蓮縣卓溪鄉秀姑巒溪-火車:"+"<br/>"+"搭乘火車至玉里站下車即抵";
+                document.getElementById("car").innerHTML= "暫無";
+             }
+             else if(selction == 3)
+             {
+                changeMap(23.329980 ,121.225096);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "山風瀑布-花蓮縣卓溪鄉-南安部落/清水部落-自行開車:"+"<br/>"+"由花蓮市循九號省道南至玉里，接18號省道可抵瓦拉米步道入口，下車步行約2公里";
+             }
+             else if(selction == 4)
+             {
+                changeMap(23.328553 , 121.235136);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "瓦拉米步道-花蓮縣卓溪鄉-南安部落/清水部落-自行開車:"+"<br/>"+"北上路線：長十四公里的瓦拉米步道，大致沿著日據時期通的八通關越嶺道而行，約四．五個小時就可抵達海拔一千呎史的瓦拉米木屋"+"<br/>"+"南下路線：由花蓮市循九號省道南至玉里，接18號省道可底步道入口";
+             }
+             else if(selction == 5)
+             {
+                changeMap(23.323930 ,121.247957);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "八通關古道-花蓮縣卓溪鄉-南安部落/清水部落-自行開車:"+"<br/>"+"由玉山國家公園南安進入，過遊客中心後，可達步道入口，為古道之一部分";
+             }
+             else if(selction == 6)
+             {
+                changeMap(23.316556 ,121.128130);
+                document.getElementById("bus").innerHTML= "新康山-花蓮縣卓溪鄉-南安部落/清水部落-公車:"+"<br/>"+"國光客運至向陽即可到達新康山登山口";
+                document.getElementById("train").innerHTML= "新康山-花蓮縣卓溪鄉-南安部落/清水部落-火車:"+"<br/>"+"搭乘北迴線火車至關山火車站，轉乘國光客運至向陽即可到達新康山登山口";
+                document.getElementById("car").innerHTML= "新康山-花蓮縣卓溪鄉-南安部落/清水部落-自行開車:"+"<br/>"+"1、由國道一號(中山高)至汐止系統交流道轉走國道五號(北宜高速公路)，過雪山隧道由蘇澳交流道下往台9號方向行駛，到達玉里後接台18線即可到達新康山登山口。"+"<br/>"+"2、由國道三號(二高)至南港系統交流道轉走國道五號(北宜高速公路)，過雪山隧道由蘇澳交流道下往台9號方向行駛，到達玉里後接台18線即可到達新康山登山口。";
+             }
+             else if(selction == 7)
+             {
+                changeMap(23.302554 ,121.258846);
+                document.getElementById("bus").innerHTML= "南安遊客中心-花蓮縣卓溪鄉-公車:"+"<br/>"+"從玉里或富里搭經古風對開的花蓮客運，在卓樂下車再步行前往南安遊客中心。";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "南安遊客中心-花蓮縣卓溪鄉-自行開車:"+"<br/>"+"1.國道五號：由國道一號(中山高)至汐止系統交流道轉走國道五號(北宜高速公路)，過雪山隧道由蘇澳交流道下往台9號方向行駛，到達玉里後接台18線即可到達南安遊客中心。"+"<br/>"+"2.國道五號：由國道三號(二高)至南港系統交流道轉走國道五號(北宜高速公路)，過雪山隧道由蘇澳交流道下往台9號方向行駛，到達玉里後接台18線即可到達南安遊客中心。";
+             }
+             else if(selction == 10)
+             {
+                changeMap(23.546136 ,120.953468);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "樂樂谷野溪溫泉-南投縣信義鄉-東埔部落-自行開車:"+"<br/>"+"由竹山依三號省道北上至名間，右接16號省道至水里，行至頂崁，遇分往日月潭與東埔的岔道，右21號省道往南行，經信義、和社抵東埔村，由東埔再走90分鐘則抵樂樂谷溫泉。";
+             }
+             else if(selction == 11)
+             {
+                changeMap(23.566965 ,120.937744);
+                document.getElementById("bus").innerHTML= "彩虹瀑布(情人谷)-南投縣信義鄉-東埔部落-公車:"+"<br/>"+"從縱貫鐵路→二水站→集集、水里→轉搭員林客運至東埔溫泉。";
+                document.getElementById("train").innerHTML= "彩虹瀑布(情人谷)-南投縣信義鄉-東埔部落-火車:"+"<br/>"+"縱貫鐵路→二水站→集集、水里→轉搭員林客運至東埔溫泉。";
+                document.getElementById("car").innerHTML= "彩虹瀑布(情人谷)-南投縣信義鄉-東埔部落-自行開車:"+"<br/>"+"南下路線：國道1號→彰化系統交流道→國道3號→下名間交流道(台3線)→集集(台16線)→水里(台21線)→信義(台21線)→東埔溫泉→東埔溫泉後山腰(勝華飯店後方山路)→彩虹吊橋→情人谷→彩虹瀑布"+"<br/>"+"北上路線：國道3號→下名間交流道(台3線)→集集(台16線)→水里(台21線)→信義(台21線)→東埔溫泉→東埔溫泉後山腰(勝華飯店後方山路)→彩虹吊橋→情人谷→彩虹瀑布";
+             }
+             else if(selction == 12)
+             {
+                changeMap(23.561458 ,120.930983);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "東埔溫泉區-南投縣信義鄉-東埔部落-自行開車:"+"<br/>"+"南下路線：國道1號→彰化系統交流道→國道3號→下名間交流道(台3線)→集集(台16線)→水里(台21線)→信義(台21線)→(投60縣道)東埔溫泉北上路線：國道3號→下名間交流道(台3線)→集集(台16線)→水里(台21線)→信義(台21線)→(投60縣道)東埔溫泉";
+             }
+             else if(selction == 13)
+             {
+                changeMap(23.555570 , 120.933056);
+                document.getElementById("bus").innerHTML= "父不知子斷崖-南投縣信義鄉-東埔部落-公車:"+"<br/>"+"從縱貫鐵路→二水站→集集、水里→轉搭員林客運至東埔溫泉。";
+                document.getElementById("train").innerHTML= "父不知子斷崖-南投縣信義鄉-東埔部落-火車:"+"<br/>"+"縱貫鐵路→二水站→集集、水里→轉搭員林客運至東埔溫泉。";
+                document.getElementById("car").innerHTML= "父不知子斷崖-南投縣信義鄉-東埔部落-自行開車:"+"<br/>"+"南下路線：國道1號→彰化系統交流道→國道3號→下名間交流道(台3線)→集集(台16線)→水里(台21線)→信義(台21線)→東埔溫泉→八通關古道登山口→步行進入北上路線：國道3號→下名間交流道(台3線)→集集(台16線)→水里(台21線)→信義(台21線)→東埔溫泉→八通關古道登山口→步行進入";
+             }
+             else if(selction == 14)
+             {
+                changeMap(23.566242 ,120.934486);
+                document.getElementById("bus").innerHTML= "彩虹吊橋-南投縣信義鄉-東埔部落-公車:"+"<br/>"+"從縱貫鐵路→二水站→集集、水里→轉搭員林客運至東埔溫泉。";
+                document.getElementById("train").innerHTML= "彩虹吊橋-南投縣信義鄉-東埔部落-火車:"+"<br/>"+"縱貫鐵路→二水站→集集、水里→轉搭員林客運至東埔溫泉。";
+                document.getElementById("car").innerHTML= "彩虹吊橋-南投縣信義鄉-東埔部落-自行開車:南下路線："+"<br/>"+"國道1號→彰化系統交流道→國道3號→下名間交流道(台3線)→集集(台16線)→水里(台21線)→信義(台21線)→東埔溫泉→東埔溫泉後山腰(勝華飯店後方山路)北上路線：國道3號→下名間交流道(台3線)→集集(台16線)→水里(台21線)→信義(台21線)→東埔溫泉→東埔溫泉後山腰(勝華飯店後方山路)";
+             }
+             else if(selction == 15)
+             {
+                changeMap(23.556180 ,120.938855);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "八通關古道-南投縣信義鄉-東埔部落-火車:"+"<br/>"+"縱貫鐵路→二水站→集集、水里→轉搭員林客運至東埔溫泉。";
+                document.getElementById("car").innerHTML= "八通關古道-南投縣信義鄉-東埔部落-自行開車"+"<br/>"+":南下路線：國道1號→彰化系統交流道→國道3號→下名間交流道(台3線)→集集(台16線)→水里(台21線)→信義(台21線)→東埔溫泉→八通關古道"+"<br/>"+"北上路線：國道3號→下名間交流道(台3線)→集集(台16線)→水里(台21線)→信義(台21線)→東埔溫泉→八通關古道大眾運輸:縱貫鐵路→二水站→集集、水里→轉搭員林客運至東埔溫泉。";
+             }
+             else if(selction == 16)
+             {
+                changeMap(23.602371 ,120.885670);
+                document.getElementById("bus").innerHTML= "獵人古道-南投縣信義鄉-東埔部落-公車:"+"<br/>"+"可搭乘員林客運由水里往東埔的班車，於望鄉站下車即可到達。";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "獵人古道-南投縣信義鄉-東埔部落-自行開車:"+"<br/>"+"可經由國道3號於竹山或者名間交流道下，接上台16線往集集、水里方向，經過水里之後過神龍橋接台21線，進入信義鄉，最後可抵望鄉部落。";
+             }
+             else if(selction == 17)
+             {
+                changeMap(23.610127 ,120.887476);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "千歲吊橋-南投縣信義鄉-東埔部落-自行開車:"+"<br/>"+"台21過99K後往前數十公尺(台21與投59交叉口)於阿里不動林道右轉上山至信和產業道路交叉左轉停車";
+             }
+             else if(selction == 18)
+             {
+                changeMap(23.618189 ,120.883997);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "萬興關-南投縣信義鄉-東埔部落-自行開車:"+"<br/>"+"國道3號→下名間交流道→台16→台21線(新中橫)(往玉山國家公園方向)→投59縣道→久美部落。";
+             }
+             else if(selction == 19)
+             {
+                changeMap(23.955271 ,121.080422);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "曲冰遺蹟-南投縣信義鄉-東埔部落-自行開車:"+"<br/>"+"國道3號→草屯交流道(216k草屯/芬園)→草屯(台14)→國姓→埔里→霧社→投71(往奧萬大方向)→萬大發電廠→親愛村→松林部落→曲冰遺址";
+             }
+             else if(selction == 20)
+             {
+                changeMap(23.263375, 120.825993);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "南橫梅山遊憩區-高雄市桃源區-自行開車:"+"<br/>"+"1.南橫公路西段：台南--埡口(台20線)台南─(59K)→甲仙─(21.7K)→寶來─(14.5K)→桃源─(16K)→梅山口─(25K)→天池─(12K)→埡口"+"<br/>"+"2.南橫公路東段：台東--埡口(台20線)台東─(47.9K)→關山─(38.3K)→利稻─(28.3K)→埡口";
+             }
+             else if(selction == 21)
+             {
+                changeMap(23.263541 ,120.825844);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "布農文化展示館-高雄市桃源區梅山山莊內-自行開車:"+"<br/>"+"國道3號經新化系統交流道，轉國道8號下新化端，接南橫公路台20線(中山路)東行往桃源鄉方向，梅山遊客中心旁。";
+             }
+             else if(selction == 22)
+             {
+                changeMap(23.263461 ,120.826083);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "梅山原生種植物園-高雄市桃源區-自行開車:"+"<br/>"+"國道3號經新化系統交流道，轉國道8號下新化端，接南橫公路台20線(中山路)東行往桃源鄉方向，循梅山指標即抵。";
+             }
+             else if(selction == 23)
+             {
+                changeMap(23.293422, 120.838847);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "梅山溫泉-高雄市桃源區-自行開車:"+"<br/>"+"自永康交流道下高速公路，循20號省道而行，沿途經永康、甲仙、荖濃、寶來、桃源至梅山口，即能抵達梅山村。";
+             }
+             else if(selction == 24)
+             {
+                changeMap(23.238560 ,120.811538);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "梅蘭布農藝術村-高雄市桃源區-自行開車:"+"<br/>"+"國道3號經新化系統交流道，轉國道8號下新化端，接南橫公路台20線(中山路)東行往桃源鄉方向，台20線指標107公里處，近梅山口。";
+             }
+             else if(selction == 25)
+             {
+                changeMap(23.227286 ,120.911630);
+                document.getElementById("bus").innerHTML= "關山越嶺道-高雄市桃源區-公車:"+"<br/>"+"由台南火車站搭乘往天池的興南客運，或自台東火車站搭乘往天池的台汽客運，在天池下車車次均為每日一班，行前宜先詢問，興南客運(06)220-6382，台汽客運(089)322-027。";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "關山越嶺道-高雄市桃源區-自行開車:"+"<br/>"+"1.國道3號→台84線→玉井→甲仙(台20線南橫)→經六龜→桃源→天池(寶來至天池約54.9公里)"+"<br/>"+"2.由台東初來走省道台20線→霧鹿→埡口→天池(初來至天池約68.9公里)";
+             }
+             else if(selction == 26)
+             {
+                changeMap(23.069183 ,120.752260);
+                document.getElementById("bus").innerHTML= "藤枝森林遊樂區-高雄市桃源區-公車:"+"<br/>"+"自高雄車站前搭乘高雄客運往六龜，每50分鐘一班，全票NT$222，再轉車到藤枝，全票NT$60，起訖時間：AM6：30至PM4：10（六龜至藤枝每日只有四班車）。高雄客運六龜站TEL：(07)689-1021。";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "藤枝森林遊樂區-高雄市桃源區-自行開車:"+"<br/>"+"1.自中山高速公路鼎金交流接國道10號至旗山端下，經美濃、六龜、藤枝。"+"<br/>"+"2.走南二高至燕巢系統，轉國道10號至旗山端下，經美濃、六龜、藤枝。3.自屏東經高樹、大津、六龜、藤枝，即可抵達。";
+             }
+             else if(selction == 30)
+             {
+                changeMap(23.097034, 121.176204);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "布農族文物館-台東縣海端鄉-初來部落/瀧下部落-自行開車:"+"<br/>"+"進入後可依您的出發地，選擇適合的交通方式";
+             }
+             else if(selction == 31)
+             {
+                changeMap(23.173681 ,121.042303);
+                document.getElementById("bus").innerHTML= "天龍吊橋-台東縣海端鄉-霧鹿部落-公車:"+"<br/>"+"由台東搭乘鼎東客運往利稻方向的班車至霧鹿站，步行約5分鐘即可到達天龍吊橋。";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "天龍吊橋-台東縣海端鄉-霧鹿部落-自行開車:"+"<br/>"+"1.國道五號：由國道一號(中山高)至汐止系統交流道轉走國道五號(北宜高速公路)，過雪山隧道由蘇澳交流道下往台9號方向行駛，到達台東池上鄉接台20甲線，再續行台20線即可到達天龍吊橋。"+"<br/>"+"2.國道五號：由國道三號(二高)至南港系統交流道轉走國道五號(北宜高速公路)，過雪山隧道由蘇澳交流道下往台9號方向行駛，到達台東池上鄉接台20甲線，再續行台20線即可到達天龍吊橋。";
+             }
+             else if(selction == 32)
+             {
+                changeMap(23.171423, 121.177562);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "龍泉瀑布-台東縣海端鄉-初來部落/瀧下部落-自行開車:"+"<br/>"+"國道五號(北宜高速公路)於羅東交流道下→接台七丙線→沿台七丙線直行經羅東往三星方向→三星路四段→右轉成功路→循往「龍泉步道 」指路標行駛→過水源橋(甘泉寺 )左轉沿安農溪 邊產業道路行駛約130公尺→再右轉進入產業道路約100公尺遇岔路即往右側行駛到底(往左邊是到龍泉觀音佛祖寺)即可抵達龍泉步道 入口停車場";
+             }
+             else if(selction == 33)
+             {
+                changeMap(23.169892 ,121.040458);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "霧鹿古砲台-台東縣海端鄉-霧鹿部落-自行開車:"+"<br/>"+"台東市轉台九省道，往北邊方向行駛至關山鎮，於池上大橋前轉台20省道，約187K左轉霧鹿村，在霧鹿國小後方即可看到。";
+             }
+             else if(selction == 34)
+             {
+                changeMap(23.019591, 121.115608);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "加拿瀑布-台東縣海端鄉-加拿部落/加和部落-自行開車:"+"<br/>"+"離開鹿野市區沿省道台９線北上進入海端，過加典溪橋左轉進鄉道東28-1續往加拿部落、加拿國小右轉、越過加鹿溪橋駛入溪畔的產業道路";
+             }
+             else if(selction == 35)
+             {
+                changeMap(23.264363, 120.962389);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "關山啞口-台東縣海端鄉-自行開車:"+"<br/>"+"從台東轉台九省道，往北邊方向行駛，到池上大橋前叉路，轉台二十號省道，直駛64公里即可到達。";
+             }
+             else if(selction == 36)
+             {
+                changeMap(23.174419 ,121.039506);
+                document.getElementById("bus").innerHTML= "霧鹿峽谷-台東縣海端鄉-霧鹿部落-公車:"+"<br/>"+"搭乘鼎東客運山線8178次公車於霧鹿站下車，沿台20號道往西行進約250公尺可到達。";
+                document.getElementById("train").innerHTML= "霧鹿峽谷-台東縣海端鄉-霧鹿部落-火車:"+"<br/>"+"搭乘臺鐵至關山車站，轉搭乘鼎東客運山線8178次公車(往利稻)於霧鹿站下車，沿台20號道往西行進約250公尺可到達。";
+                document.getElementById("car").innerHTML= "霧鹿峽谷-台東縣海端鄉-霧鹿部落-自行開車:"+"<br/>"+"國道5號→蘇澳交流道下→台9線→台20甲→台20線。";
+             }
+             else if(selction == 37)
+             {
+                changeMap(23.173796 ,121.041667);
+                document.getElementById("bus").innerHTML= "霧鹿溫泉-台東縣海端鄉-下馬部落-公車:"+"<br/>"+"自台東搭往利稻之鼎東客運於霧鹿站下車。";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "霧鹿溫泉-台東縣海端鄉-下馬部落-自行開車:"+"<br/>"+"從台東北上至海端，再再循20號省道前行。";
+             }
+             else if(selction == 38)
+             {
+                changeMap(23.197929, 121.037200);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "栗松溫泉-台東縣海端鄉-利稻部落"+"<br/>"+"從台東北上至海端，再再循20號省道前行。";
+             }
+             else if(selction == 39)
+             {
+                changeMap(22.914746 ,121.119076);
+                document.getElementById("bus").innerHTML= "鹿野高台-台東縣延平鄉-布谷拉夫部落-公車:"+"<br/>"+"於臺東火車站搭乘鼎東客運可抵達鹿野高台，8:30~15:30約每60分一班客運，熱氣球嘉年華開辦時會有增班。";
+                document.getElementById("train").innerHTML= "無";
+                document.getElementById("car").innerHTML= "鹿野高台-台東縣延平鄉-布谷拉夫部落-自行開車:"+"<br/>"+"北行：沿著台九線，過鹿野橋後立即於東33鄉道向左轉，於光榮路/東33鄉道向右轉，於龍馬路/東33鄉道向左轉，於高台路向右轉，即可到達。"+"<br/>"+"南行：沿著台九線，於台塑加油站右轉永安路/東32鄉道，於永樂路/東33鄉道向左轉，於高台路（茶壺地標）向左轉，即可到達。";
+             }
+             else if(selction == 40)
+             {
+                changeMap(22.905000 ,121.120494);
+                document.getElementById("bus").innerHTML= "鹿野神社-台東縣鹿野鄉-布谷拉夫部落-公車:"+"<br/>"+"搭乘臺鐵於鹿野車站下車，距離崑慈堂還有約2.5公里，可選擇搭乘鼎東客運山線8161、8163、8165、8166、8167、8168、8170次公車至光榮站下車，或台灣好行縱谷鹿野線於崑慈堂站下車。";
+                document.getElementById("train").innerHTML= "鹿野神社-台東縣鹿野鄉-布谷拉夫部落-火車:"+"<br/>"+"1、搭乘鼎東客運山線8161、8163、8165、8166、8167、8168、8170次公車，於光榮站下車即到達。"+"<br/>"+"2、搭乘台灣好行縱谷鹿野線於崑慈堂站下車即到達。";
+                document.getElementById("car").innerHTML= "無";
+             }
+             else if(selction == 41)
+             {
+                changeMap(22.887362 ,121.167436);
+                document.getElementById("bus").innerHTML= "無";
+                document.getElementById("train").innerHTML= "鸞山部落森林博物館-台東縣延平鄉-拿卡努部落-火車:"+"<br/>"+"搭乘台鐵至鹿野火車站，轉搭計程車前往鸞山派出所，在此會合由阿力曼帶路進山";
+                document.getElementById("car").innerHTML= "鸞山部落森林博物館-台東縣延平鄉-拿卡努部落-自行開車:"+"<br/>"+"省道台 9線→鹿野→轉入鸞山聯絡道→過鸞山橋，右轉前行→循指標轉入鸞山派出所，在此會合由阿力曼帶路進山";
+             }
+            }
+            
+        );
+      </script>
+      <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh88wZg1ESTmhYk7YqHI9LU9A7H6BFYWk&callback=initMap">
+      </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>
