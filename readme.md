@@ -6,3 +6,6 @@ FCU IECS FUNG YunFai
 
 # HTML
 * 軟體工程導論的期末專題
+
+# softwareQuality
+* 軟體品質保證與軟體測試的功課與專題
